@@ -1,6 +1,8 @@
 import math
 from timeit import default_timer as timer
 
+#added a comment
+
 def primes2(n):
     pcount = 0
     num = 3
