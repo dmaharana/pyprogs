@@ -6,13 +6,13 @@ def get_test_cases(fname):
 
     for tests in range(0, testCaseCount):
         line = fp.readline()
-	rline = reverse_word_seq(line)
+	rline = convert_char_to_numSeq(line)
 	#print 'Original: {0}|Reversed: {1}'.format(line.strip(), rline)
 	print 'Case #{0}: {1}'.format(tests+1, rline)
 
     fp.close() 
 
-def reverse_word_seq(line):
+def convert_char_to_numSeq(line):
     alphaNum = { 'a':'2', 'b':'22', 'c':'222',
                  'd':'3', 'e':'33', 'f':'333',
 		 'g':'4', 'h':'44', 'i':'444',
